@@ -1,0 +1,84 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-image: url('./greentable.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Exo 2', sans-serif;
+}
+.disable{
+    cursor: not-allowed;
+}
+button{
+    display: block;
+    background-color: yellow;
+    outline: 0px;
+    border: 0px;
+    cursor: pointer;
+    font-size: large;
+}
+#new-deck{
+    display: inline-block;
+    padding: 5px;
+    box-shadow: 3px 3px 1px white;
+}
+#draw-cards{
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+}
+#cards{
+    display: flex;
+    width: 30%;
+    margin: 40px auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    color: white;
+    font-weight: lighter;
+}
+#cards img{
+    width: 150px;
+    height: 220px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.pointer{
+    cursor: pointer;
+}
+#remaining {
+    margin : 0;
+    text-align: center;
+    color: white;
+    font-size: larger;
+    display: inline-block;
+}
+
+#img1 , #img2{
+    display: flex;
+    margin: 2px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width : 400px) {
+    html{
+        font-size: 90%;
+    }
+    #cards img{
+        width: 100px;
+        height: 145px;
+    }
+}
+#cards h4 {
+    margin : 0;
+    text-align: center;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+}
